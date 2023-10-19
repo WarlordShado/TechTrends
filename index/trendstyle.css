@@ -1,0 +1,151 @@
+:root {
+	--color: Tomato; /* Variables */
+	--textShadow: 1px 1px 2px LightCoral, 0 0 25px Red, 0 0 5px DarkRed;
+	--backColor: black;
+	--imgBackColor: black;
+	--bigTextColor: Red;
+	--ani2023Trans: width 2s, height 2s, font-weight 2s, font-size 2s, filter 2s, transform 2s;
+}
+
+/* Misc Formating */
+
+h2 {
+	color: var(--bigTextColor);
+	text-shadow: var(--textShadow); 
+	background-color:var(--backColor);
+	font-size:150%;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+h3, h4, h5, h6 {
+	color: var(--bigTextColor);
+	text-shadow: var(--textShadow); 
+	background-color:var(--backColor);
+	font-size:250%;
+}
+
+p, h1 {
+	color: black;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*This stuff changing would mess up the formating*/
+.main-doc {
+	margin-left: 200px !important;
+	padding: 0px 10px !important;
+}
+
+li {
+	font-size:120%;
+}
+
+img {
+	border: 5px solid var(--imgBackColor);
+}
+
+option{
+	background:#fff;
+}
+
+div span {
+	font-weight: bold;
+}
+
+/*Styles for the Tables*/
+
+th, td {
+    border:2px solid maroon;
+  	border-radius: 5px;
+    background-color: white;
+    word-wrap: break-word;
+	transition: background-color 0.5s;
+}
+
+th:hover, td:hover {
+	background-color:LightGrey;
+}
+
+table {
+	width: 45%;
+	height: 25%;
+	border:6px solid var(--imgBackColor);
+	background-color: black;
+	border-radius: 10px;
+    word-wrap: break-word;
+}
+
+/* Used for buttons in the Survey section */
+
+.buttonStyle {
+	width: 90px;
+    height: 40px;
+    background: var(--color);
+	font-size:100%;
+	text-align:center;
+	border-radius: 10px;
+    border: 1px solid #000000;
+	box-shadow: 0 7px #999;
+	word-break: keep-all;
+}
+
+.buttonStyle:hover {
+	font-weight: bold;
+}
+
+.buttonStyle:active {
+	box-shadow: 0 3px #666;
+	transform: translateY(2px);
+	font-weight: bold;
+}
+
+fieldset {
+	background-color:white;
+}
+
+#survey {
+	background-color: black;
+}
+
+/*Used for Navigation*/
+#nav {
+	height: 100%; 
+	width: 210px; 
+	position: fixed; 
+	z-index: 1; 
+	top: 0; 
+	left: 0;
+	background-color: black; 
+	overflow-x: hidden; 
+	padding-top: 25px;
+	border: 5px solid var(--color);
+}
+
+#navlink {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: black;
+}
+
+li a {
+	display: block;
+	color: #FFFFFF;
+	padding: 8px 16px;
+	text-decoration: none;
+	font-size: 100%;
+	transition: font-size 2s;
+}
+
+li a:hover {
+	background-color: #FFFAF0;
+	color: black;
+	font-size: 110%;
+}

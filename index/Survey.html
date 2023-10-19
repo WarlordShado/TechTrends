@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="trendstyle.css">
+	<link rel="stylesheet" type="text/css" href="MiscStyle.css">
+	<link rel="icon" type="image/x-icon" href="../Website Images/Icon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tech Trends: Survey</title>
+</head>
+
+
+	<nav id="nav">
+		<h2 style="	text-align:center;">Navigation</h2>
+		
+		<ul id="navlink">
+			<li><a href="./Trend.html">Homepage</a></li>
+			<li><a href="./Vocab.html">Tech Trends Vocab</a></li>
+		</ul>
+		
+		<h2 style="	text-align:center;">Settings</h2>
+		
+	<form name="colorChange">
+		
+		<label for="color" id="settingLabel" style="text-align:center;">Change Background Color</label>
+		
+		<select onchange="changeColor(this)" name="color" id="colorSelect">
+			<option id="red" value="red">Red</option>
+			<option id="maroon" value="maroon">Maroon</option>
+			<option id="orange" value="orange">Orange</option>
+			<option id="yellow" value="yellow">Yellow</option>
+			<option id="lime" value="lime">Lime</option>
+			<option id="green" value="green">Green</option>
+			<option id="cyan" value="cyan">Cyan</option>
+			<option id="blue" value="blue">Blue</option>
+			<option id="purple" value="purple">Purple</option>
+			<option id="HotPink" value="HotPink">Pink</option>
+			<option id="white" value="white">White</option>
+			<option id="black" value="black">Black</option>
+		</select>
+
+	</form>
+	
+	</nav>
+
+<body id="rgb">
+<main class="main-doc">
+<h3> Survey </h3>
+
+<fieldset id="survey">
+<form onsubmit="validateForm()">
+
+<!-- <fieldset> -->
+
+	<!--Basic Info-->
+	
+	<fieldset>
+
+	<h1><strong>Basic Info</strong></h1>
+	
+	First Name: <input type="text" name="fname" ><br>
+	
+	Last name: <input type="text" name="lname"><br>
+	
+	Contact Info: <input type="text" name="contact"><br>
+	
+	</fieldset><br>
+	<!--Rating and Helpful Info-->
+	<fieldset>
+
+	<h1><strong> Info and Ratings</strong></h1>
+	
+	<label for="add"> Any trends that you think could be added to the site?</label><br>
+	<input type="text" id="add" name="add"><br>
+	
+	<label for="info">Any information that could be added to the site?</label><br>
+	<textarea id="info" name="info" rows="10" cols="30"></textarea><br>
+	
+	<label for="rating"> Rate experience 1-5 </label>
+	<select id="rating" name="rating">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select><br><br>
+	</fieldset><br>
+	
+	<input class="buttonStyle" type="reset">
+	<input class="buttonStyle" type="submit"><br><br>
+	
+	
+</form>
+</fieldset>
+
+<script src="../Javascript/Functions.js"></script>
+
+</body>
+</main>
